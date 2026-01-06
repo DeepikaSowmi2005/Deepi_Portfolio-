@@ -239,7 +239,37 @@
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1rem;
     }
-    
+    .project-link {
+  text-decoration: none;    
+  color: inherit;
+}
+
+.click-text {
+  display: block;
+  text-align: center;
+  margin-bottom: 8px;
+  color: #00bfff;             
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.project-img {
+  width: 220px;              
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.project-link:hover .project-img {
+  transform: scale(1.05);
+}
+
+.project-link:hover .click-text {
+  text-decoration: underline; 
+       }
     
 
     footer {
@@ -343,13 +373,37 @@
     <h2><i class="fa-solid fa-diagram-project"></i> Projects</h2>
     <div class="projects">
       <div class="card">
-        <h3>Mind Marvel App</h3>
-        <p>Developed an educational and chill-out app for children and adults with gamified learning features.</p>
-        <a href="https://deepikasowmi2005.github.io/OnlineMindMarvel-/" target="_blank" style="color:yellow; font-weight:bold; display:inline-block; margin-top:8px;"><center>🔗 View Live project </center></a>
-      </div>
+  <h3>Mind Marvel App</h3>
+
+  <a href="https://deepikasowmi2005.github.io/OnlineMindMarvel-/" 
+     target="_blank" 
+     class="project-link">
+    <span class="click-text"> Click to view project👇🏻</span>
+
+    <img src="IMG-20250205-WA0008 (1).png"
+         alt="Mind Marvel Project"
+         class="project-img">
+
+  </a>
+
+  <p>
+    “Designed a fun-packed interactive game that delivers entertainment for both children and adults through engaging and playful gameplay.”
+  </p>
+</div>
       <div class="card">
         <h3>Cryptocurrency Dashboard</h3>
-        <p>Built a real-time dashboard to track Bitcoin and other cryptocurrencies with analytics and visualization.</p>
+        
+        <a href="https://deepikasowmi2005.github.io/Cryptodashboard-/" 
+     target="_blank" 
+     class="project-link">
+    <span class="click-text"> Click to view project👇🏻</span>
+
+    <img src="cryptocurrency.jpg"
+         alt="cryptodashboard Project"
+         class="project-img">
+
+  </a>
+        <p>“Developed a real-time cryptocurrency dashboard to track Bitcoin and other cryptocurrencies with live price updates, interactive charts, and data visualization.”</p>
       </div>
     </div>
   </section>
